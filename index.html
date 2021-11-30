@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" href="assets/jslib/normalize_5.0.css">
+   <link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <script src="assets/json/main.json"></script>
+   <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+   <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+   <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
+   <script src="assets/jslib/reSize_1.0/resize.js"></script>
+
+</head>
+
+<body>
+   <div id="bk6ch15ss2" class='conatiner' data-attr='continues' tabindex="0">
+      <script type="text/javascript">
+         (function ($) {
+            game_resize_function("#bk6ch15ss2");
+         })(jQuery);
+      </script>
+      <div id="topmenubar">
+         <div id="logo">
+            <img id="logoImg" src="assets/images/343.png">
+         </div>
+         <div id="closeBtn">
+            <div class="closeBtn1">Close</div>
+            <div class="closeImg"></div>
+         </div>
+
+      </div>
+      <div id="topmenubar2">
+         <div id="contentTittle">
+            <p class="titleName">Hydrostatic Pressure - I
+            </p>
+         </div>
+      </div>
+
+
+      <!-- slides -->
+      <div class="slideconatiner">
+         <div class='Slides'>
+            <div id="slide1Content">
+               <div class="standContainer">
+                  <img class="pressureContainerImg" src="assets/images/Withoututube.png">
+               </div>
+               <div class="cover1"></div>
+               <div class="utube"></div>
+               <div class="tankLiquidBtm"></div>
+               <div class="utubeliquid"></div>
+               <div class="mcTube"></div>
+               <div class="mcLeftLiquid"></div>
+               <div class="mcRightLiquid"></div>
+               <div class="mcTankLiquid"></div>
+               <div class="mcPanel"></div>
+               <div class="calculatorDiv"></div>
+               <div class="bolts boltLeft"></div>
+               <div class="bolts boltRight"></div>
+               <div class="tubeHighlighted"></div>
+               <div class="calculationsDivDragHeader"></div>
+               <div class="calculations">
+                  <img class="calc" src="assets/images/252.png" />
+                  <img class="calclose" src="assets/images/284.png" />
+                  <p class="calcTxt">Calculations</p>
+                  <div class="calculationTxt">
+                     <p>Manometer Readings:</p>
+                     <p>Height difference between the two liquid arms of manometer,<br />H<sub>1</sub>:&nbsp;<span
+                           class="height1"></span>&nbsp;cm</p>
+                     <p>Density of liquid in the Manometer, D<sub>1</sub>:&nbsp;<span
+                           class="density1"></span>&nbsp;gm/cm<sup>3</sup></p>
+                     <p>Jar Readings:</p>
+                     <p>Depth of funnel below water level in the Jar, H<sub>2</sub>:&nbsp;<span
+                           class="height2"></span>&nbsp;cm</p>
+                     <p>Density of liquid in the Jar, D<sub>2</sub>:&nbsp;<span>?</span>&nbsp;gm/cm<sup>3</sup></p>
+                     <p>Pressure due to liquid column in Manometer = Pressure due to liquid column in Jar</p>
+                     <p>H<sub>1</sub> x D<sub>1 </sub> x g = H<sub>2</sub> x D<sub>2</sub> x g (where g is acceleration
+                        due to <br>gravity)</p>
+                     <p>Therefore, Density of liquid in the Jar is</p>
+                     <p>D<sub>2</sub> = (H<sub>1</sub> x D<sub>1</sub>) / H<sub>2</sub></p>
+                     <p>D<sub>2</sub> = &nbsp;<span class="height1"></span> x <span
+                           class="density1"></span>&nbsp;/&nbsp;<span class="height2"></span>&nbsp;=&nbsp;<span
+                           class="calcu1"></span>&nbsp; gm/cm<sup>3</sup></p>
+                  </div>
+               </div>
+               <!-- <div class="scalediv"></div> -->
+
+               <div class="contentContainer">
+                  <div class="heightDivDup"></div>
+                  <div class="depthDivDup"></div>
+                  <div class="densityDivDup"></div>
+                  <div class="contentImgDiv"></div>
+
+                  <div class="ballDiameterDiv">
+                     <p class="ballDiameterText heighttext">0</p>
+                  </div>
+                  <div class="ballDiameterDiv ringDiameterDiv">
+                     <p class="ballDiameterText ringDiameterText">13.6</p>
+                  </div>
+
+                  <div class="ballDiameterDiv depthDiv">
+                     <p class="ballDiameterText depthText">0</p>
+                  </div>
+                  <div class="ballDiameterDiv densityDiv">
+                     <p class="ballDiameterText densityText"></p>
+                  </div>
+                  <div class="repeatDiv">
+                     <span class="repeatDivText">REPEAT</span>
+                  </div>
+                  <p class="repeatText">Click to repeat experiment with<br>a liquid of different density</p>
+               </div>
+               <div class="workSheetContainer">
+                  <p class="worksheetTitle">Use the worksheet provided to you, to enter readings of the experiment.</p>
+                  <div class="workSheetDiv" onclick="OpenWord()">
+                     <a id="MyLink" style="display:none"></a>
+                  </div>
+                  <input id="file-input" type="file" name="name" style="display: none;" />
+                  <div class="workSheetContent">
+                     <p class="workSheetText">
+                        <b>Aim: </b>To determine the density of an<br>unknown liquid using a
+                        U-tube<br>Manometer.<br><br>
+                        <b>Apparatus</b><br>U-tube Manometer with one tube<br>attached to a flexible rubber tube<br><br>
+                        Funnel having mouth sealed with a<br>flexible rubber diaphragm<br><br>
+                        Jar<br><br>
+                        Liquids of different densities, such as<br>mercury, water, glycerine, oil etc.<br><br>
+                        <b>Material:</b><br>Water<br><br>
+                        <b>Procedure</b><br> Lower the funnel for some distance<br> below the liquid surface in the
+                        jar.<br><br>
+                        Note down the depth at which the funnel<br> is positioned below the liquid surface.<br><br>
+                        Note the difference in height between<br>the liquid in the two arms of the<br>manometer.<br><br>
+                        Calculate the density of the liquid<br>using the equation provided.<br><br><br>
+                        Repeat the experiment with a different liquid.<br><br>
+                        <b>Calculations:</b><br>Manometer Readings:<br><br>
+                        Height difference between the two liquid arms of manometer, H<sub>1</sub>(cm)<br><br>
+                        Density of liquid in the Manometer, D<sub>1</sub>(gm/cc)<br><br>
+                        Jar Readings:<br><br>
+                        Depth of funnel below liquid level in the Jar, H<sub>2</sub> (cm)<br><br>
+                        Density of liquid in the Jar, D<sub>2</sub>: (gm/cc)<br><br>
+                        Pressure due to liquid column in<br>Manometer = Pressure due to liquid<br>column in Jar<br><br>
+                        H<sub>1</sub> x D<sub>1</sub> x g = H<sub>2</sub> x D<sub>2</sub> x g (where g is acceleration
+                        due to
+                        gravity)<br>
+                        <br>
+                        <br>
+                        <br>
+                     </p>
+                  </div>
+                  <p class="copyRight">© 2019, Schoolnet India Limited</p>
+               </div>
+
+               <div class="procedureDiv">
+                  <img class="procdClick" src="assets/images/procdClick.png">
+                  <img class="procdAnim" src="assets/images/procedure.gif" />
+                  <div class="procAnimTxt">Procedure</div>
+                  <div class="mainProcdiv">
+                     <span class="procdNum">1)</span>
+                     <div class="prevProcd"></div>
+                     <div class="nextProcd"></div>
+                     <img class="showObj" src="assets/images/showObjM.gif" />
+                     <div class="showObjTxt">Show</div>
+                     <img class="closeProcd closeProcdBefore" src="assets/images/closeUp.png" />
+                     <span class="closeProcdTxt" style="display: none;">CLOSE</span>
+                     <div class="procedSteps procedSteps1">
+                        <p>The aim of the experiment is to determine the density of the liquid in the jar using a U tube
+                           Manometer containing liquid of known density.</p>
+                     </div>
+                     <div class="procedSteps procedSteps2">
+                        <p>Click and drag the funnel below the liquid surface in the jar.</p>
+                     </div>
+                     <div class="procedSteps procedSteps3">
+                        <p>Note the difference in the level of liquid in the two arms of the Manometer </p>
+                     </div>
+                     <div class="procedSteps procedSteps4">
+                        <p>Calculate the density of the liquid in the jar based on the depth of the funnel, level
+                           difference in the two tubes of manometer and the density of the liquid in the manometer.</p>
+                     </div>
+                     <div class="procedSteps procedSteps5">
+                        <p>Click <span class="cal">CALCULATE</span> to view the calculations<br /> and verify your
+                           answer.</p>
+                     </div>
+                     <div class="procedSteps procedSteps6">
+                        <p>Click REPEAT to perform the experiment with a different liquid of unknown<br /> density in
+                           the jar.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div id="downmenubar">
+               <!-- <p class="copyRight">© 2019, Schoolnet India Limited</p> -->
+            </div>
+         </div>
+         <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1464 @@
+/*global css starts*/
+
+* {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Green';
+  src: local('fonts/118_MEIRYO.ttf'), local('fonts/118_MEIRYO.ttf'), url('fonts/118_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Green1';
+  src: local('fonts/151_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'italic';
+  src: local('fonts/1883_MEIRYO.ttf'), url('fonts/1883_MEIRYO.ttf');
+}
+
+@font-face {
+  font-family: 'Trebuchet';
+  src: local('fonts/11_Trebuchet MS.ttf'), url('fonts/11_Trebuchet MS.ttf');
+}
+
+@font-face {
+  font-family: 'Trebuchet1';
+  src: local('fonts/trebuc.woff'), url('fonts/trebuc.woff');
+}
+
+@font-face {
+  font-family: 'ArialBold';
+  src: local('fonts/6_Arial.ttf'), url('fonts/6_Arial.ttf');
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: local('fonts/digital-7.ttf'), url('fonts/digital-7.ttf');
+}
+
+html, body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d0cccc;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+/*global css ends*/
+
+#bk6ch15ss2 {
+  position: absolute;
+  width: 996px;
+  height: 680px;
+  /* background: url('../images/89.png'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background: white;
+  overflow: hidden;
+}
+
+#topmenubar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: url(../images/1338.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo {
+  position: absolute;
+  width: 108px;
+  height: 18px;
+  padding: 5px;
+  top: 6px;
+  right: 39px;
+  background: white;
+}
+
+#logoImg {
+  position: absolute;
+  width: 91%;
+  /* height: 100%; */
+}
+
+#closeBtn {
+  position: absolute;
+  width: 30px;
+  height: 37px;
+  left: 962px;
+  cursor: pointer;
+}
+
+.closeBtn1 {
+  position: absolute;
+  top: 28px;
+  left: 1px;
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+.closeImg {
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  top: 2px;
+  left: 2px;
+  background: url(../images/closeB.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeImg {
+  background: url(../images/closeA.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeBtn1 {
+  color: red;
+}
+
+#topmenubar2 {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  /* background: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  left: 0;
+  top: 40px;
+  z-index: 100;
+  /* box-shadow: 0 8px 6px -7px #939191; */
+}
+
+#contentTittle {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+}
+
+.titleName {
+  position: absolute;
+  top: -12px;
+  left: 7px;
+  font-size: 18px;
+  font-family: Arial;
+  letter-spacing: 0.7px;
+  color: #000033;
+  font-weight: bold;
+}
+
+#slideButtons {
+  position: absolute;
+  width: 35%;
+  height: 30px;
+  right: 0px;
+  top: 0px;
+  z-index: 21;
+  background-color: #e8fc7c;
+  /* opacity: 0.5; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#navigation {
+  position: absolute;
+  font-size: 13px;
+  top: 7px;
+  left: 7px;
+  opacity: 0.5;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+#navSymbol {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 8px;
+  left: 92px;
+}
+
+#navArrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#buttonsDiv {
+  position: absolute;
+  /* background: red; */
+  width: 195px;
+  height: 44px;
+  height: 46px;
+  top: -8px;
+  left: 111px;
+}
+
+#buttonsImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#downmenubar {
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  bottom: 0px;
+  left: 0;
+  z-index: 200;
+  /* background: #ccc; */
+  /* background: url(../images/1347.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+.copyRight {
+  position: absolute;
+  bottom: 13px;
+  font-family: Arial;
+  font-size: 11px;
+  left: 108px;
+}
+
+#previousslidebtn {
+  position: absolute;
+  width: 52px;
+  height: 37px;
+  top: 2px;
+  left: 8px;
+  cursor: pointer;
+}
+
+#previousslidebtnhover {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#previousslidebtnImg, #previousslidebtnhoverImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#viewallBtn {
+  position: absolute;
+  width: 87px;
+  height: 25px;
+  top: 8.4px;
+  left: 51px;
+  cursor: pointer;
+}
+
+#viewallhoverBtn {
+  position: absolute;
+  width: 87px;
+  height: 27px;
+  top: 9px;
+  left: 51px;
+  cursor: pointer;
+  display: none;
+}
+
+#viewallBtnImg, #viewallhoverBtnImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#viewlAllContainer {
+  position: absolute;
+  width: 89%;
+  height: 85%;
+  top: 87px;
+  left: 51px;
+  z-index: 1;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  display: none;
+}
+
+#viewlAllContentsHeader {
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  top: 0;
+  left: 0;
+  background: url(../images/36.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#viewAllContentSymbol {
+  position: absolute;
+  width: 4.5%;
+  height: 68%;
+  top: 11px;
+  left: 47px;
+  /* border: 2px solid black; */
+  background: url(../images/39.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#viewAllContentClose {
+  position: absolute;
+  width: 4%;
+  height: 54%;
+  top: 15px;
+  right: 27px;
+  /* border: 2px solid black; */
+  background: url(../images/48.PNG);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#viewAllSelect {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 37%;
+  height: 37%;
+  border-radius: 6px;
+}
+
+#viewAllContents {
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  top: 68px;
+  left: 0px;
+  background: url(../images/40.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#upScroller {
+  position: absolute;
+  width: 5%;
+  height: 8.5%;
+  top: 34px;
+  right: 11px;
+  /* background-color: red; */
+  background: url(../images/28.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: none;
+}
+
+#upScroller:hover {
+  position: absolute;
+  width: 8%;
+  height: 13%;
+  top: 25px;
+  right: -5px;
+  /* background-color: rgb(0, 26, 255); */
+  background: url(../images/25.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#downScroller {
+  position: absolute;
+  width: 5%;
+  height: 8.5%;
+  top: 437px;
+  right: 11px;
+  /* background-color: red; */
+  background: url(../images/27.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#downScroller:hover {
+  position: absolute;
+  width: 8%;
+  height: 13%;
+  top: 428px;
+  right: 0px;
+  /* background-color: rgb(0, 26, 255); */
+  background: url(../images/26.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#contentsName {
+  table-layout: fixed;
+  position: absolute;
+  border-collapse: collapse;
+  width: 87%;
+  top: 33px;
+  left: 35px;
+}
+
+#contentsName td {
+  padding: 9px;
+  /* height: 10px; */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#contentsName tr:nth-child(odd) {
+  background-color: #fff4e4;
+}
+
+#nextslidebtn {
+  position: absolute;
+  width: 44px;
+  height: 35px;
+  top: 2px;
+  left: 133px;
+  cursor: pointer;
+}
+
+#nextslidebtnhover {
+  position: absolute;
+  width: 46px;
+  height: 34px;
+  top: 6px;
+  left: 130px;
+  cursor: pointer;
+  display: none;
+}
+
+#nextslidebtnImg, #nextslidebtnhoverImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#previousbtn {
+  position: absolute;
+  width: 71px;
+  height: 42px;
+  bottom: 3px;
+  left: 55px;
+  background: url(../images/prev_0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#previousbtn:hover {
+  position: absolute;
+  width: 71px;
+  height: 42px;
+  bottom: 3px;
+  left: 55px;
+  background: url(../images/prev_0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#previousbtn:active {
+  position: absolute;
+  width: 71px;
+  height: 42px;
+  bottom: 3px;
+  left: 55px;
+  background: url(../images/prev_0003.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#replaybtn {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  left: 40%;
+}
+
+#replaybtn:hover {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  left: 40%;
+}
+
+#replaybtn:active {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0003.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  left: 40%;
+}
+
+#replaybtn2 {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0001.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  display: none;
+  left: 69%;
+}
+
+#replaybtn2:hover {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0002.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  left: 69%;
+}
+
+#replaybtn2:active {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  left: -47px;
+  background: url(../images/replay_0003.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  bottom: 0px;
+  left: 69%;
+}
+
+#audiobtn {
+  position: absolute;
+  width: 89px;
+  height: 45px;
+  left: -47px;
+  background: url(../images/audio.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
+  cursor: pointer;
+  top: 0px;
+  /* display: none; */
+  left: 86%;
+}
+
+.controlbtn {
+  position: absolute;
+  width: 50px;
+  height: 55px;
+  right: 5px;
+  top: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+#pausebtn {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/pause_0001.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer
+}
+
+#pausebtn:hover {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/pause_0002.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#pausebtn:active {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/pause_0003.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#playbtn {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/play_0001.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  cursor: pointer
+}
+
+#playbtn:hover {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/play_0002.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#playbtn:active {
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  left: -47px;
+  background: url('../images/play_0003.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sliderdots {
+  position: absolute;
+  width: 900px;
+  height: 20px;
+  bottom: 5px;
+  left: 0px;
+  text-align: center;
+}
+
+.Slides {
+  position: absolute;
+  width: 996px;
+  height: 650px;
+  /* display:none; */
+}
+
+.videoslides {
+  position: absolute;
+  width: 100%;
+}
+
+.dots {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin: 2px;
+  background: url('../images/dot_black.png');
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.activeslide {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin: 2px;
+  background: url('../images/dot_hover.png');
+  background-size: 100% 100%;
+}
+
+#slide1Content {
+  width: 99.7%;
+  height: 89%;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+#okButton {
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  bottom: 4px;
+  left: 45%;
+  background: url(../images/367.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#okButton:hover {
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  bottom: 4px;
+  left: 45%;
+  background: url(../images/369.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#resetButton {
+  position: absolute;
+  width: 78px;
+  height: 27px;
+  bottom: 4px;
+  left: 74%;
+  background: url(../images/361.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #464343;
+  display: none;
+}
+
+#resetButton:hover {
+  position: absolute;
+  width: 78px;
+  height: 27px;
+  bottom: 4px;
+  left: 74%;
+  background: url(../images/363.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.standContainer {
+  position: absolute;
+  width: 300px;
+  height: 390px;
+  top: -40px;
+  left: 164px;
+}
+
+.pressureContainerImg {
+  position: absolute;
+  width: 223px;
+  height: 395px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mcLeftLiquid {
+  position: absolute;
+  width: 10px;
+  height: 128px;
+  /* top: 306px; */
+  bottom: 272.5px;
+  left: 197px;
+  opacity: 0.7;
+  background: url(../images/MC_leftLiquid.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* -ms-transform: rotatex(180deg);
+  -webkit-transform: rotatex(180deg);
+  -moz-transform: rotatex(180deg);
+  -o-transform: rotatex(180deg);
+  transform: rotatex(180deg);
+  transform-origin: top; */
+  z-index: 1;
+}
+
+.mcRightLiquid {
+  position: absolute;
+  width: 10px;
+  height: 128px;
+  /* top: 306px; */
+  bottom: 272.5px;
+  left: 252px;
+  opacity: 0.7;
+  background: url(../images/MC_rightLiquid.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* -ms-transform: rotatex(180deg);
+  -webkit-transform: rotatex(180deg);
+  -moz-transform: rotatex(180deg);
+  -o-transform: rotatex(180deg);
+  transform: rotatex(180deg);
+  transform-origin: top; */
+  z-index: 1;
+}
+
+.mcTankLiquid {
+  position: absolute;
+  width: 100px;
+  height: 164px;
+  top: 335px;
+  left: 329px;
+  background: url(../images/water_mc.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotatex(180deg);
+  transform-origin: top;
+}
+
+.mcPanel {
+  position: absolute;
+  width: 57px;
+  height: 50px;
+  top: 88px;
+  left: 351px;
+  background: url(../images/main_mc.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.scalediv {
+  position: absolute;
+  width: 57px;
+  height: 50px;
+  top: 88px;
+  left: 351px;
+  background: url(../images/scale.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* cursor:pointer; */
+}
+
+.mcTube {
+  position: absolute;
+  width: 12px;
+  height: 41px;
+  top: 46px;
+  left: 375px;
+  background: url(../images/DragPipe_mc.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.calculatorDiv {
+  position: absolute;
+  width: 128px;
+  height: 35px;
+  top: 310px;
+  left: 571px;
+  background: url(../images/calculate.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.contentContainer {
+  position: absolute;
+  width: 73%;
+  height: 211px;
+  top: 350px;
+  left: 0px;
+  border-bottom-left-radius: 34px;
+  background: url(../images/content.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contentImgDiv {
+  position: absolute;
+  width: 431px;
+  height: 117px;
+  top: 21px;
+  left: 55px;
+  background: url(../images/calculationContainer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ballDiameterDiv {
+  position: absolute;
+  width: 76px;
+  height: 30px;
+  top: 36px;
+  left: 178px;
+  /* border: 1px solid red; */
+}
+
+.ringText {
+  top: 83px;
+}
+
+.ringDiameterDiv {
+  top: 91px;
+}
+
+.ballDiameterText {
+  position: absolute;
+  top: -9px;
+  left: 11px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  font-family: 'Trebuchet1';
+  font-weight: bold;
+  color: #333333;
+}
+
+.depthDiv {
+  left: 397px;
+}
+
+.densityDiv {
+  top: 91px;
+  left: 397px;
+}
+
+.repeatDiv {
+  position: absolute;
+  width: 86px;
+  height: 30px;
+  top: 42px;
+  left: 563px;
+  background: url(../images/reset2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.repeatDivText {
+  position: absolute;
+  font-family: Arial;
+  top: 9px;
+  left: 16px;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  color: black;
+}
+
+.repeatText {
+  position: absolute;
+  top: 65px;
+  left: 528px;
+  font-size: 11px;
+  font-family: Arial;
+  /* font-weight: bold; */
+  color: #161515;
+  word-spacing: 2px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.workSheetContainer {
+  position: absolute;
+  width: 270px;
+  height: 109%;
+  top: -31px;
+  right: -2px;
+  background-color: #F0F0F0;
+  z-index: 999;
+}
+
+.worksheetTitle {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000000;
+}
+
+.workSheetDiv {
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheet.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.workSheetDiv:hover {
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheethover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.workSheetContent {
+  position: absolute;
+  width: 258px;
+  height: 456px;
+  top: 122px;
+  left: 5px;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.workSheetText {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  font-size: 13px;
+  font-family: Arial;
+  /* font-weight: bold; */
+  color: #000033;
+}
+
+b {
+  color: #000033;
+  font-weight: 800;
+}
+
+/* procedure css starts */
+
+.procedureDiv {
+  position: absolute;
+  width: 263px;
+  height: 164.5px;
+  top: -20px;
+  right: 275px;
+  overflow: hidden;
+}
+
+.procdAnim {
+  position: absolute;
+  width: 263px;
+  height: 164.5px;
+  display: none;
+}
+
+.procdNum {
+  position: absolute;
+  width: 19px;
+  height: 22px;
+  top: 28px;
+  left: 5px;
+  /* letter-spacing: 1.3px; */
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.procedSteps {
+  position: absolute;
+  width: 94%;
+  height: auto;
+  left: 24px;
+  top: 17px;
+  /* line-height: 1.3; */
+  font-family: Arial;
+  font-size: 12px;
+  text-align: left;
+  display: none;
+}
+
+.procdClick {
+  position: absolute;
+  right: -2px;
+}
+
+.mainProcdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.prevProcd {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 4px;
+  left: 4px;
+  opacity: 0.5;
+  pointer-events: none;
+  background: url(../images/procPrev.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.nextProcd {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 4px;
+  right: 4px;
+  background: url(../images/procdnext.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.showObj {
+  position: absolute;
+  width: 116px;
+  /* height: 23px; */
+  bottom: 32px;
+  left: 140px;
+  cursor: pointer;
+  border: 1px solid #ffcf00;
+  border-radius: 13px;
+  border-bottom: 2px solid #ffcf00;
+}
+
+.showObjTxt {
+  position: absolute;
+  font-size: 10.4px;
+  top: 115px;
+  left: 196px;
+  width: auto;
+  font-weight: bold;
+  font-family: 'Trebuchet';
+  color: #333333;
+  pointer-events: none;
+}
+
+.closeProcdAfter {
+  position: absolute;
+  width: 22px;
+  /* height: 31px; */
+  bottom: 8px;
+  left: 46%;
+}
+
+.closeProcdBefore {
+  position: absolute;
+  width: 16px;
+  height: 9px;
+  bottom: 9px;
+  left: 47%;
+}
+
+.closeProcdTxt {
+  position: absolute;
+  bottom: 3px;
+  left: 44%;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Trebuchet';
+  color: #333333;
+  pointer-events: none;
+  display: none;
+}
+
+.procedSteps1 {
+  width: 84%;
+  display: block;
+}
+
+.procedSteps2 {
+  width: 83%;
+  /* word-spacing: 3.4px; */
+}
+
+.procedSteps3 {
+  width: 83%;
+  /* word-spacing: 1.4px; */
+}
+
+.procedSteps4 {
+  width: 83%;
+  /* word-spacing: 2.1px; */
+}
+
+.procedSteps5 {
+  /* word-spacing: 2px; */
+}
+
+.procedSteps6 {
+  width: 83%;
+  /* word-spacing: 1px; */
+}
+
+/* procedure css ends */
+
+.cover1 {
+  position: absolute;
+  width: 151px;
+  height: 268px;
+  left: 315px;
+  top: 78px;
+  background: url(../images/237.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.mcTankLiquid1 {
+  position: absolute;
+  width: 100px;
+  height: 164px;
+  top: 255px;
+  left: 15px;
+  background: url(../images/water_mc.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotatex(180deg);
+  transform-origin: top;
+}
+
+.calculations {
+  position: absolute;
+  width: 459px;
+  height: 467px;
+  left: 539px;
+  top: -26px;
+  z-index: 1000;
+  background: url(../images/256.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.calculationsDivDragHeader {
+  position: absolute;
+  top: -24px;
+  width: 370px;
+  height: 27px;
+  left: 586px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.calclose {
+  position: absolute;
+  width: 27px;
+  height: 18px;
+  right: 4px;
+  top: 6px;
+}
+
+.calclose:hover {
+  cursor: pointer;
+}
+
+.calc {
+  position: absolute;
+  width: 48px;
+  height: 34px;
+}
+
+.calcTxt {
+  position: absolute;
+  font-size: 16px;
+  top: -5px;
+  left: 56px;
+  font-weight: 600;
+  font-family: Arial;
+}
+
+.calculationTxt {
+  position: absolute;
+  font-family: 'Trebuchet';
+  font-size: 14px;
+  line-height: 18px;
+  word-spacing: 2px;
+  color: #333333;
+  top: 35px;
+  left: 15px;
+}
+
+.calculationTxt span {
+  color: #660000;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.utube {
+  position: absolute;
+  width: 84px;
+  height: 306px;
+  left: 196px;
+  top: 31px;
+  background: url(../images/utube.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+  filter: contrast(0.7) drop-shadow(0px 0px 1px rgb(29, 215, 235));
+}
+
+.utubeliquid {
+  position: absolute;
+  width: 67px;
+  height: 34px;
+  left: 196px;
+  top: 305.6px;
+  opacity: 0.7;
+  background: url(../images/utubeLiquid.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) {
+  .utubeliquid {
+    top: 305.6px;
+  }
+  /* your css rules for ipad portrait */
+}
+
+sub {
+  bottom: -0.13em;
+  padding: 1px;
+}
+
+sup {
+  font-size: 65%;
+}
+
+.procAnimTxt {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  top: 5px;
+  left: 199px;
+  font-size: 12px;
+  font-family: 'Trebuchet';
+  background: #FFCF00;
+  color: #423d3d;
+}
+
+/* .cal{
+  font-family: 'Trebuchet';
+} */
+
+.bolts {
+  position: absolute;
+  width: 26px;
+  height: 10px;
+  top: 90px;
+  z-index: 1;
+  background: url(../images/bolt.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: contrast(0.8);
+}
+
+.boltLeft {
+  left: 187px;
+}
+
+.boltRight {
+  left: 244px;
+}
+
+.tankLiquidBtm {
+  position: absolute;
+  width: 131px;
+  height: 25px;
+  top: 325px;
+  left: 315px;
+  background: url(../images/tubeBottom.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.heightDivDup {
+  position: absolute;
+  width: 206px;
+  height: 60px;
+  top: 23px;
+  left: 58px;
+  z-index: 1;
+  opacity: 0;
+  background: #EFF2F6;
+}
+
+.depthDivDup {
+  position: absolute;
+  width: 203px;
+  height: 62px;
+  top: 24px;
+  left: 280px;
+  z-index: 1;
+  opacity: 0;
+  background: #EFF2F6;
+}
+
+.densityDivDup {
+  position: absolute;
+  width: 206px;
+  height: 52px;
+  top: 78px;
+  left: 58px;
+  z-index: 1;
+  opacity: 0;
+  background: #EFF2F6;
+}
+
+.tubeHighlighted {
+  position: absolute;
+  width: 132px;
+  height: 344px;
+  top: 12px;
+  left: 163px;
+  z-index: 1;
+  opacity: 0;
+  background: white;
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .showObjTxt {
+    font-size: 10px;
+  }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  .showObjTxt {
+    font-size: 10px;
+  }
+}
