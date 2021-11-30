@@ -31,13 +31,63 @@ $(document).mousemove(function (e) {
 });
 
 $(".mcPanel").draggable({
+  axis: "y",
+  cursor: "move",
   start: function (e, ui) {
-    click.y = e.clientY;
+    //click.y = e.clientY;
   },
   drag: function (e, ui) {
     $(this).css("z-index", "1");
-    var original = ui.originalPosition;
-    last1 = (e.pageY - click.y + original.top) / zoom;
+    //var original = ui.originalPosition;
+    //console.log(click.y)
+    //console.log(zoom)
+    //last1 = (e.pageY - click.y + original.top) / zoom;
+    //var actualTop = ui.position.top;
+    ui.position.top = ui.position.top / zoom
+    ui.position.left = ui.position.left / zoom
+    if (ui.position.top < Math.max(88, ui.position.top)) {
+      ui.position.top = Math.max(88, ui.position.top);
+    }
+    if (ui.position.top > Math.min(270, ui.position.top)) {
+      ui.position.top = Math.min(270, ui.position.top);
+    }
+    $('.mcTube').css('height', ui.position.top - 47 + 'px');
+    console.log(ui.position.top)
+    //depthttext = (125 - (250-(ui.position.top))).toFixed(2);
+    depthttext = Number((125 - (250 - (ui.position.top))).toFixed(2));
+    if (depthttext <= 0) {
+      depthttext = 0;
+      total = 0;
+    }
+    HeightManometer = (Tank1Den / Tube1Den) * depthttext;
+    heighttext = Number(HeightManometer.toFixed(2));
+    $('.depthText').text(depthttext);
+    $('.heighttext').text(heighttext);
+    density1 = $('.ringDiameterText').text();
+    $('.height1').text(heighttext);
+    $('.density1').text(density1);
+    $('.height2').text(depthttext);
+    if (depthttext <= 0) {
+      total = 0
+    }
+    else {
+      total = Number(((heighttext * density1) / depthttext).toFixed(2));
+    }
+    $('.calcu1').text(total);
+    if (heighttext > 0) {
+      $('.mcLeftLiquid').css('height', (126) + (ui.position.top / 35) + 'px');
+      $('.mcRightLiquid').css('height', (131) - (ui.position.top / 35) + 'px');
+      if (ui.position.top < 149) {
+        var mcTankLiquidHeight1 = (ui.position.top + 40);
+        $('.mcTankLiquid').css('height', mcTankLiquidHeight1 + 'px');
+      }
+    }
+    else {
+      $('.mcLeftLiquid').css('height', (128) + 'px');
+      $('.mcRightLiquid').css('height', (128) + 'px');
+      $('.mcTankLiquid').css('height', (164) + 'px');
+    }
+    /*
     if (last1 <= 88) {
       ui.position = {
         left: 351,
@@ -52,9 +102,9 @@ $(".mcPanel").draggable({
       $('.mcTube').css('height', ui.position.top - 45 + 'px');
     } else {
       $('.mcTube').css('height', last1 - 45 + 'px');
-      
-      
-      depthttext = (126 - (250 - (ui.position.top / zoom))).toFixed(2);      
+
+
+      depthttext = (126 - (250 - (ui.position.top / zoom))).toFixed(2);
 
       if (last1 < 125) {
         depthttext = 0;
@@ -115,6 +165,7 @@ $(".mcPanel").draggable({
         top: last1
       };
     }
+    */
   },
 });
 
@@ -196,7 +247,7 @@ $('.showObj').on('mouseover', function () {
   if (procedCount == 1) {
     $('.cover1').css('display', 'block').css('opacity', '1');
     $('.tubeHighlighted').css('opacity', '0.7');
-    $('.mcTube').css({'opacity':'0.1','filter': 'brightness(2)'});
+    $('.mcTube').css({ 'opacity': '0.1', 'filter': 'brightness(2)' });
     $('.mcPanel').css('opacity', '0.2');
     $('.contentImgDiv, .utubeliquid, .mcRightLiquid, .mcLeftLiquid, .calculatorDiv, .repeatDiv, .repeatText, .ballDiameterDiv, .pressureContainerImg,.bolts').css('opacity', '0.3');
   }
@@ -228,7 +279,7 @@ $('.showObj').on('mouseover', function () {
 
 $('.showObj').on('mouseout', function () {
   $(this).attr('src', 'assets/images/showObjM.gif');
-  $('.mcTube').css({'filter': 'brightness(1)'});
+  $('.mcTube').css({ 'filter': 'brightness(1)' });
   $('.depthDivDup, .densityDivDup,.heightDivDup,.tubeHighlighted').css('opacity', '0');
   $('.cover1,.mcTube, .utube,.mcPanel, .contentImgDiv, .mcRightLiquid, .mcLeftLiquid, .pressureContainerImg, .mcTankLiquid, .mcTube, .calculatorDiv, .repeatDiv, .repeatText, .ballDiameterDiv,.utubeliquid,.bolts,.tankLiquidBtm,.ballDiameterText').css('opacity', '1');
 });
